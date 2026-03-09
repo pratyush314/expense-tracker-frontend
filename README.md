@@ -1,16 +1,41 @@
-# React + Vite
+# Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, responsive React-based personal expense tracker built for the Marketing Mojito Web Developer Intern assignment. Features real-time expense logging, category breakdowns, running totals, and live currency conversion using the free Frankfurter API.[file:1]
 
-Currently, two official plugins are available:
+[![Live Demo](https://img.shields.io/badge/Live-Vercel-brightgreen)](https://expense-tracker-frontend-opal-eight.vercel.app)
+[![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind-3.4-blueviolet)](https://tailwindcss.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Add & Delete Expenses**: Log expenses with name, amount, and category (Food, Travel, Marketing, Utilities, Other)
+- **Real-time Totals**: Running total updates automatically as expenses are added/removed
+- **Category Breakdown**: Visual spending summary by category
+- **Live Currency Conversion**: Real-time INR → USD/EUR/GBP/INR conversion via Frankfurter API
+- **Fully Responsive**: Works on desktop (1600x900) and mobile (414x749)
+- **Error Handling**: Graceful API failure states and loading indicators
+- **Clean Components**: 5+ reusable components with React hooks only (no Redux/Context)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+| Technology      | Purpose          |
+| --------------- | ---------------- |
+| React 19        | Core framework   |
+| Vite            | Build tool       |
+| Tailwind CSS    | Styling          |
+| Frankfurter API | Currency rates   |
+| React Hooks     | State management |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/pratyush314/expense-tracker-frontend.git
+cd expense-tracker
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
